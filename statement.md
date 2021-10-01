@@ -1,7 +1,7 @@
 # Classes e Structs 02 - Métodos
 Métodos são funções associadas a classes, structs ou enums. Desse modo, os métodos definem um conjuto de operações que podem modificar os valores dos atributos. Também podem ser vistos como mensagens enviadas pelo programador de modo que um objeto possa modificar seu estado. 
 
-==> Veja que na classe abaixo existem 3 métodos (func é a palavra chave que os define). veja que o código não executa por falta de implementação de um método. Você pode escrever esse método. 
+==> Veja que na classe abaixo existem 3 métodos (func é a palavra chave que os define). **Veja que o código não executa** por falta de implementação de um método. Você pode escrever esse método. 
 
 ```swift runnable
 class Counter {
@@ -61,10 +61,12 @@ class Counter {
 
 ```
 
+
 Vamos ver um exemplo de métodos com struct. Atenção para os labels x e y e os nomes de parâmetros  deltaX e deltaY.
 
 ==> você poderia criar no método moveBy usar a referência do 
 
+```swift runnable
 struct Point {
     var x = 0.0, y = 0.0
 
@@ -79,6 +81,8 @@ struct Point {
 var somePoint = Point(x: 1.0, y: 1.0)
 somePoint.moveBy(x: 2.0, y: 3.0)
 print("O ponto é agora (\(somePoint.x), \(somePoint.y))")
+```
+
 
 
 ## Modificando Value Types com Métodos Instaciados
