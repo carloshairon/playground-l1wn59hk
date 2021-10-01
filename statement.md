@@ -108,16 +108,14 @@ struct Point {
     }
 }
 
-```
-
 //veja que na chamada usamos os labels
 var somePoint = Point(x: 1.0, y: 1.0)
 somePoint.moveBy(x: 2.0, y: 3.0)
 print("O ponto é agora (\(somePoint.x), \(somePoint.y))")
 
+```
 
-Veja um exemplo com enum
-
+Vamos ver agora um exemplo com enums.
 ==>Você pode criar um método para fazer o ant(), ou seja, leva a lâmpada não para o próximo estado, mas para o anterior. Em seguida tente fazer mais instâncias do enum e então comente o código de modo a exeplicar o self.  
 
 ```swift runnable
